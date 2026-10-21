@@ -39,8 +39,12 @@ a{
 }
 img{
     width: 100%;
-    height: auto;
-    top: 25px;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    z-index: 5;
 }
 
 /* ==== En-tete ===== */
@@ -86,13 +90,21 @@ main section {
     margin: 0 auto;
     padding: 2rem 1rem;
 }
-
+.section-formation {
+    position: relative;
+    height: 300px;
+    margin: 15px auto ;
+    max-width: 1000px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+}
 .carte {
     display: flex;
     background: #fff;
     padding: 1rem;
     border-radius: var(--rayon);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
 
 .duree {
@@ -124,7 +136,7 @@ main section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: relative;
     width: 100%;
     background-color: black;
     z-index: 12;
@@ -145,9 +157,10 @@ main section {
 .logo span{
     font-style: italic;
     position: absolute;
-    top: 40px;
+    top: 90px;
     left: 60px;
     color: white;
+    align-items: center;
 }
 
 /* Menu : la liste devient horizontale */
@@ -187,6 +200,13 @@ img{
     background-size: cover;
     background-position: center;
 }
-
-
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    max-width: 100%;
+    margin: 25px auto 10px auto;
+    border-radius: 6px;
+}
 
