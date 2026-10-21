@@ -1,15 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="with=device-with, initial-scale=1.0 ">  
-        <title>site web formation git informatique</title>
-</head>
-<body>
-    <header>
-        <div class="logo">
 
-        </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="with=device-with, initial-scale=1.0 ">
+    <title>site web formation git informatique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="en-tete">
+          <div class="logo">
+             <img src="images/logouniv.jpg" alt="logo de universite">
+             <span> devenez plus fort</span>
+         </div>
+        <nav class="menu" aria-label="navigatiion principale">
+            <ul>
+                <li> <a href="index.html"> ACCUEIL</a></li>
+                <li><a href="#formation.html">FORMATION </a></li>
+                <li> <a href="#inscription.html">INSCRIPTION</a></li>
+                <li><a href="#contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
     </header>
+    <!--BANIERE DE LA PAGE-->
+    <div class="banner">
+        <h1> bienvenue en GID 2</h1>
+        <p>Apprenez le <strong> developpemt web</strong>,<em> la statistiques decisionels</em> et le geni logiciel avec des projets concrets .</p>
+        <a href="#inscription" class="button"> je m'inscrit</a>
+    </div>
+    <img src="images/gid2.jpg" alt="photo de groupe">
+    <main>
+        <!--Section pour d'ecrire nos formation-->
+        <section id="formation" class="section-formation">
+            <h1> Nos formations</h1>
+            <article class="carte">
+                <h2>Developpement Web</h2>
+                <p>HTML5,CSS,JAVASCRIPT pour creer des applications</p>
+                <p> duree : <span class="duree">24 heures</span></p>
+            </article>
+            <article class="carte">
+                <h2> Statistique Decisionnel</h3>
+                <p> Preparer des donnees,entrainer et evaluer un modele.</p>
+                <p> duree : <span class="duree"> 30 heures</span></p>
+            </article>
+            <article class="carte">
+                <h2>Genie Logiciel</h3>
+                <p> uml,bonnes pratiques de code et travail en equipe</p>
+                <p>duree <span class="duree">36 heures</span></p>
+            </article>
+        </section>
+        <section id="apropos" class="section-apropos">
+            <h3>Pourquoi choisir la formation?</h2>
+            <ul>
+                <li> Des projets concrets a chaque cours</li>
+                <li>Des enseignants en activites</li>
+                <li> Un suivi personnalises</li>
+            </ul>
+            <h3> Comment s'inscrire?</h3>
+            <ol>
+                <li> Remplir le formulaire</li>
+                <li> Valider son adresse e-mail</li>
+                <li> Choisir sa filiere</li>
+            </ol>
+        </section>
+        <section id="inscriptiion " class="section-inscription">
+            <h2>Creer mon compte </h2>
+            <!--le formulaire arrive a la 7 etape-->
+        </section>
+    </main>
+    <footer class="pieds" id="conctact">
+        <h2>Nous conctacter</h2>
+        <p>formation <br>Douala,Cameroun <br><a href="mailto:contact@.cm">contact@formation.cm</a>
+        </p>
+        <p><small>&copy 2026 Formation</small></p>
+    </footer>
 </body>
 </html>
